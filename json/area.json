@@ -1,0 +1,1183 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [1.89881, 1.23701, 0.779319, 62.4032, 33.8603]
+  , "total":
+  [10289, 13317, 1693, 514, 14]
+  , "name":"System"
+  , "max_resources":
+  [854400, 1708800, 2713, 1518, 42720]
+  , "children":
+  [
+    {
+      "name":"myproject"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [1.89881, 1.23701, 0.779319, 62.4032, 33.8603]
+      , "total_kernel_resources":
+      [10289, 13317, 1693, 513.5, 14]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Component call"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 256 bits wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"256b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Component return"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 80 bits wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"80b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"myproject.B0.runOnce"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [0, 8987, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [0, 1, 0, 0, 0]
+                }
+                , {
+                  "name":"myproject.cpp:57 > nnet_dense.h:122 > \nac_int.h:1437 > ac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [0, 511, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":57
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":122
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"myproject.cpp:63 > nnet_dense.h:122 > \nac_int.h:1437 > ac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [0, 246, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":63
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":122
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"myproject.cpp:69 > nnet_dense.h:122 > \nac_int.h:1437 > ac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [0, 37, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":69
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":122
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"w2.h:6"
+                  , "type":"resource"
+                  , "data":
+                  [0, 8192, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/weights/w2.h"
+                        , "line":6
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [1, 0, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"w10.h:6"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 246, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/weights/w10.h"
+                        , "line":6
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"On-chip Read-Only Memory Lookup"
+                      , "type":"resource"
+                      , "count":246
+                      , "data":
+                      [0, 0, 246, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Read from 8192 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 8192 bit ROM. A copy of the ROM is created for each access."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"w14.h:5"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 37, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/weights/w14.h"
+                        , "line":5
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"On-chip Read-Only Memory Lookup"
+                      , "type":"resource"
+                      , "count":37
+                      , "data":
+                      [0, 0, 37, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Read from 1280 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 1280 bit ROM. A copy of the ROM is created for each access."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"w2.h:6"
+                  , "type":"resource"
+                  , "data":
+                  [768, 128, 896, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/weights/w2.h"
+                        , "line":6
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"On-chip Read-Only Memory Lookup"
+                      , "type":"resource"
+                      , "count":1024
+                      , "data":
+                      [768, 128, 896, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Read from 8192 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 8192 bit ROM. A copy of the ROM is created for each access."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Read from 1024 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 1024 bit ROM. A copy of the ROM is created for each access."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Read from 2048 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 2048 bit ROM. A copy of the ROM is created for each access."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Read from 4096 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 4096 bit ROM. A copy of the ROM is created for each access."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Read from 512 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 512 bit ROM. A copy of the ROM is created for each access."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"w6.h:6"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 511, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/weights/w6.h"
+                        , "line":6
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"On-chip Read-Only Memory Lookup"
+                      , "type":"resource"
+                      , "count":511
+                      , "data":
+                      [0, 0, 511, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Read from 16384 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 16384 bit ROM. A copy of the ROM is created for each access."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"myproject.B1.start"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [155, 1586, 0, 0, 14]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [155, 1586, 0, 0, 14]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [7, 7, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"w2.h:6"
+                  , "type":"resource"
+                  , "data":
+                  [7, 7, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/weights/w2.h"
+                        , "line":6
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [10, 7, 3, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"myproject.cpp:25"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":25
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:51 > nnet_dense.h:122 > \nac_fixed.h:1408 > ac_fixed.h:603 > \nac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 256, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":51
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":122
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"llvm.fpga.dot.product"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [0, 0, 0, 256, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:51 > nnet_dense.h:123 > \nac_fixed.h:656 > ac_fixed.h:612 > \nac_int.h:669"
+                  , "type":"resource"
+                  , "data":
+                  [0, 0, 0, 256, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":51
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":123
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"llvm.fpga.dot.product"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [0, 0, 0, 256, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:54 > nnet_batchnorm.h:91 > \nac_fixed.h:894 > ac_int.h:837"
+                  , "type":"resource"
+                  , "data":
+                  [1216, 64, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":54
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_batchnorm.h"
+                        , "line":91
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [1216, 64, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:57 > nnet_dense.h:122 > \nac_int.h:1437 > ac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [511, 71, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":57
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":122
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":511
+                      , "data":
+                      [511, 71, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:57 > nnet_dense.h:123 > \nac_int.h:1525 > ac_int.h:669"
+                  , "type":"resource"
+                  , "data":
+                  [3974, 1566, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":57
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":123
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"8-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.experimental.vector.reduce.add"
+                      , "type":"resource"
+                      , "count":44
+                      , "data":
+                      [3862, 1532, 0, 0, 0]
+                    }
+                    , {
+                      "name":"unsigned 1-bit x unsigned 1-bit to 2-bit Integer Add"
+                      , "type":"resource"
+                      , "count":46
+                      , "data":
+                      [92, 28, 0, 0, 0]
+                    }
+                    , {
+                      "name":"unsigned 2-bit x unsigned 1-bit to 3-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [6, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"unsigned 2-bit x unsigned 2-bit to 3-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [9, 6, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:57 > nnet_dense.h:125 > \nnnet_dense.h:93 > ac_int.h:2135 > \nac_int.h:1437 > ac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [224, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":57
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":125
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":93
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"8-bit Integer Add"
+                      , "type":"resource"
+                      , "count":32
+                      , "data":
+                      [224, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:60 > nnet_batchnorm.h:91 > \nac_int.h:1717 > ac_int.h:837"
+                  , "type":"resource"
+                  , "data":
+                  [352, 32, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":60
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_batchnorm.h"
+                        , "line":91
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"8-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":32
+                      , "data":
+                      [352, 32, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:63 > nnet_dense.h:122 > \nac_int.h:1437 > ac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [246, 62, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":63
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":122
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":246
+                      , "data":
+                      [246, 62, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:63 > nnet_dense.h:123 > \nac_int.h:1525 > ac_int.h:669"
+                  , "type":"resource"
+                  , "data":
+                  [1804, 646, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":63
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":123
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"7-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.experimental.vector.reduce.add"
+                      , "type":"resource"
+                      , "count":36
+                      , "data":
+                      [1739, 623, 0, 0, 0]
+                    }
+                    , {
+                      "name":"unsigned 1-bit x unsigned 1-bit to 2-bit Integer Add"
+                      , "type":"resource"
+                      , "count":27
+                      , "data":
+                      [54, 20, 0, 0, 0]
+                    }
+                    , {
+                      "name":"unsigned 2-bit x unsigned 1-bit to 3-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"unsigned 2-bit x unsigned 2-bit to 3-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [6, 3, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:63 > nnet_dense.h:125 > \nnnet_dense.h:93 > ac_int.h:2135 > \nac_int.h:1437 > ac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [192, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":63
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":125
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":93
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"7-bit Integer Add"
+                      , "type":"resource"
+                      , "count":32
+                      , "data":
+                      [192, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:66 > nnet_batchnorm.h:91 > \nac_int.h:1717 > ac_int.h:837"
+                  , "type":"resource"
+                  , "data":
+                  [320, 32, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":66
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_batchnorm.h"
+                        , "line":91
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"7-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":32
+                      , "data":
+                      [320, 32, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:69 > nnet_dense.h:122 > \nac_int.h:1437 > ac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [37, 14, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":69
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":122
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":37
+                      , "data":
+                      [37, 14, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:69 > nnet_dense.h:123 > \nac_int.h:1525 > ac_int.h:669"
+                  , "type":"resource"
+                  , "data":
+                  [320, 113, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":69
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":123
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"llvm.experimental.vector.reduce.add"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [320, 113, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:69 > nnet_dense.h:125 > \nnnet_dense.h:93 > ac_int.h:2135 > \nac_int.h:1437 > ac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [30, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":69
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":125
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":93
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"7-bit Integer Add"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [30, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:72 > nnet_batchnorm.h:60 > \nac_fixed.h:612 > ac_int.h:669"
+                  , "type":"resource"
+                  , "data":
+                  [39.3333, 0, 0, 0.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":72
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_batchnorm.h"
+                        , "line":60
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.experimental.vector.reduce.add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [23.3333, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.fpga.dot.product"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [0, 0, 0, 0.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:72 > nnet_batchnorm.h:60 > \nac_fixed.h:1408 > ac_fixed.h:603 > \nac_int.h:663"
+                  , "type":"resource"
+                  , "data":
+                  [39.3333, 0, 0, 0.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":72
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_batchnorm.h"
+                        , "line":60
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.experimental.vector.reduce.add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [23.3333, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.fpga.dot.product"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [0, 0, 0, 0.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:72 > nnet_batchnorm.h:60 > \nac_fixed.h:1408 > ac_fixed.h:603 > \nac_int.h:664"
+                  , "type":"resource"
+                  , "data":
+                  [39.3333, 0, 0, 0.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":72
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_batchnorm.h"
+                        , "line":60
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.experimental.vector.reduce.add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [23.3333, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.fpga.dot.product"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [0, 0, 0, 0.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:75"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":75
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

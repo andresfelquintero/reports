@@ -1,0 +1,47 @@
+{
+  "nodes":
+  [
+    {
+      "name":"myproject"
+      , "id":3203293336
+      , "type":"component"
+      , "children":
+      [
+        {
+          "name":"myproject.B0.runOnce"
+          , "id":3203468096
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":3279365840
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"myproject.B1.start"
+          , "id":3203587008
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":3389656944
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":3279446352
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "functionNameMapping":
+  {
+    "name":"Synthesized Function Name Mapping"
+    , "columns":
+    ["User-defined Function Name", "Mapped Function Name"]
+    , "children":
+    [
+      {
+        "name":"myproject(inputdat)"
+        , "data":
+        ["myproject"]
+        , "debug":
+        [
+          [
+            {
+              "filename":"firmware/myproject.cpp"
+              , "line":25
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Function Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs ", "MLABs"]
+    , "children":
+    [
+      {
+        "name":"myproject"
+        , "data":
+        [10289, 13317, 1693, 513.5, 14]
+        , "debug":
+        [
+          [
+            {
+              "filename":"firmware/myproject.cpp"
+              , "line":25
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Total"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [10288, 13317, 1693, 513, 14]
+        , "data_percent":
+        [1.20424, 0.779319, 62.4032, 33.8603]
+      }
+      , {
+        "name":"Available"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [854400, 1708800, 2713, 1518, 0]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "children":
+    [
+    ]
+  }
+}
